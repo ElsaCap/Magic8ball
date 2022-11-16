@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Magic 8 Ball </title>
+    <link rel="stylesheet" href="magic.css">
+</head>
+
+<body>
+    <h1> Magic 8 Ball </h1>
+
+    <div class="circle">
+    <div class="Triangle">
+        <p id="output"></p>
+    </div>
+    <input type="button" value="Ask the ball" id="btn" onclick="window.location.reload(true)"></button>
+
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 19); 
+        var answer = document.getElementById("output")
+        
+        switch (randomNumber) {
+            case 0:
+                answer.textContent = "It is certain."
+                break;
+            case 1:
+                answer.textContent = "It is decidedly so."
+                break;
+            case 2:
+                answer.textContent = "Without a doubt."
+                break;
+            case 3:
+                answer.textContent = "Yes definitely."
+                break;
+            case 4:
+                answer.textContent = "You may rely on it."
+                break;
+            case 5:
+                answer.textContent = "As I see it, yes."
+                break;
+            case 6:
+                answer.textContent = "perhaps."
+                break;
+            case 7:
+                answer.textContent = "Most likely."
+                break;
+            case 8:
+                answer.textContent = "Outlook good."
+                break;
+            case 9:
+                answer.textContent = "Yes."
+                break;
+            case 10:
+                answer.textContent = "Signs point to yes."
+                break;
+            case 11:
+                answer.textContent = "Reply hazy, try again."
+                break;
+            case 12:
+                answer.textContent = "Ask again later."
+                break;
+            case 13:
+                answer.textContent = "Better not tell you now."
+                break;
+            case 14:
+                answer.textContent = "Cannot predict now."
+                break;
+            case 15:
+                answer.textContent = "Concentrate and ask again."
+                break;
+            case 16:
+                answer.textContent = "Don't count on it."
+                break;
+            case 17:
+                answer.textContent = "My reply is no."
+                break;
+            case 18:
+                answer.textContent = "My sources say no."
+                break;
+            case 19:
+                answer.textContent = "Outlook not so good."
+                break;
+            case 20:
+                answer.textContent = "Very doubtful."
+                break;
+
+                
+            default:
+                answer.textContent = "Something is broken"
+        }
+    
+    </script>
+
+</body>
+
+</html>

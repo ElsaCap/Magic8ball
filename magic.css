@@ -1,0 +1,110 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(https://cdn.gamedevmarket.net/wp-content/uploads/20200418003259/7f083940eff77f617cb2557cbf04cdb4-1400x788.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#output {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: rgb(89, 94, 167);
+  
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 2s; /* Firefox < 16 */
+          -ms-animation: fadein 2s; /* Internet Explorer */
+           -o-animation: fadein 2s; /* Opera < 12.1 */
+              animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+
+#btn {
+    background-color: rgb(58, 33, 201);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+    margin-top: 100 px;
+    
+}
+
+#btn:hover{
+    
+  }
+.circle{
+    display: block;
+    background: rgb(0, 0, 0);
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    animation: shake 1s;
+    border-radius: 50%;
+}
+Triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+ 
+}.main {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  background: peachpuff;
+}
+.top, .bottom {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+.top {
+  -webkit-shape-outside: polygon(0% 0, 100% 0%, 100% 100%);
+  shape-outside: polygon(0% 0, 100% 0%, 100% 100%);
+  float: right;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 100%);
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%);
+}
+.bottom {
+  height: 50%;
+  float: right;
+  bottom: 0;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+  shape-outside: polygon(0% 100%, 100% 100%, 100% 0%);
+}
+
+
+
+
+@keyframes shake {
+  10%, 90% {
+      transform: translate3d(-6px, 0, 0);
+  }
+  20%, 80% {
+      transform: translate3d(3px, 0, 0);
+  }
+  30%, 50%, 70% {
+      transform: translate3d(-8px, 0, 0);
+  }
+  40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
+  
+
+
+  
+  
